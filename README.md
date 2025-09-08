@@ -44,6 +44,12 @@ graph TD
   - `query`: String (semantic search terms)
   - `max_results`: Integer (1-10, default: 5)
 - **Output Structure**:
+  - Chat URL with unique identifier
+  - Timestamp (ISO format with timezone)
+  - Conversation title
+  - **Full conversation excerpts** (not fragments)
+- **Retrieval Mechanism**: Appears to use conversation-level semantic embeddings
+- **Context Preservation**: Returns substantial conversation context (~500-2000+ tokens per result)
 ```json
 {
   "chat_url": "https://claude.ai/chat/{conversation_id}",
@@ -52,13 +58,6 @@ graph TD
   "chat_conversation": "extensive_excerpt_with_context"
 }
 ```
-  - Chat URL with unique identifier
-  - Timestamp (ISO format with timezone)
-  - Conversation title
-  - **Full conversation excerpts** (not fragments)
-- **Retrieval Mechanism**: Appears to use conversation-level semantic embeddings
-- **Context Preservation**: Returns substantial conversation context (~500-2000+ tokens per result)
-
 ### Tool 2: `recent_chats`
 **Function**: Temporal conversation navigation and metadata retrieval
 
