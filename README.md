@@ -166,11 +166,6 @@ Query: "AI psychology interpretability research"
 - Estimated indexing delay: Session completion + processing time
 - Impact: Cannot reference current conversation context
 
-**Index Coverage**:
-- Testing shows coverage up to September 3, 2025
-- Current conversation (September 7, 2025) not indexed
-- Suggests batch processing with ~4-day processing window
-
 ---
 
 ## Architectural Implications for AI Research
