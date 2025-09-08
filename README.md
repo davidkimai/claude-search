@@ -44,6 +44,14 @@ graph TD
   - `query`: String (semantic search terms)
   - `max_results`: Integer (1-10, default: 5)
 - **Output Structure**:
+```json
+{
+  "chat_url": "https://claude.ai/chat/{conversation_id}",
+  "updated_at": "ISO_8601_timestamp",
+  "title": "conversation_title",
+  "chat_conversation": "extensive_excerpt_with_context"
+}
+```
   - Chat URL with unique identifier
   - Timestamp (ISO format with timezone)
   - Conversation title
@@ -66,6 +74,7 @@ graph TD
   - Conversation title
 - **Retrieval Mechanism**: Temporal indexing with cursor-based pagination
 - **Use Case**: Recent conversation navigation and temporal filtering
+
 
 ---
 
